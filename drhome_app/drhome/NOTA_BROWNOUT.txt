@@ -1,0 +1,39 @@
+╔════════════════════════════════════════════════════════════════╗
+║                  SOLUCIÓN AL BROWNOUT ESP32                    ║
+╚════════════════════════════════════════════════════════════════╝
+
+Si el ESP32 se reinicia constantemente mostrando:
+"E BOD: Brownout detector was triggered"
+
+SOLUCIÓN SIMPLE:
+═══════════════
+
+✅ Usa un CARGADOR DE PARED 5V 2A (cargador de teléfono)
+✅ NO uses el puerto USB de la PC
+
+El puerto USB de la PC da solo 500mA, pero el ESP32 con sensores
+necesita hasta 400mA, lo que puede causar caídas de voltaje.
+
+PASOS:
+══════
+
+1. Consigue un cargador de pared 5V 2A
+2. Conecta el ESP32 con cable USB al cargador
+3. Listo! El problema desaparece
+
+ALTERNATIVAS:
+═════════════
+
+- Hub USB con alimentación externa
+- Puerto USB 3.0 (da más corriente)
+- Fuente de alimentación 5V 2A conectada a VIN
+
+NO RECOMENDADO:
+═══════════════
+
+❌ Deshabilitar el brownout detector por software
+   (Puede causar comportamiento errático)
+
+═══════════════════════════════════════════════════════════════
+
+El código ya está optimizado. Solo necesitas mejor alimentación.

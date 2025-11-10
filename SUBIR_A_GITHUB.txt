@@ -1,0 +1,173 @@
+╔════════════════════════════════════════════════════════════════╗
+║              COMANDOS PARA SUBIR A GITHUB                      ║
+╚════════════════════════════════════════════════════════════════╝
+
+Tu repositorio: https://github.com/zZzWichoL1/Apps
+
+═══════════════════════════════════════════════════════════════
+
+OPCIÓN 1: PRIMERA VEZ (Repositorio nuevo)
+═════════════════════════════════════════════════════════════
+
+1. Abre Git Bash o Terminal en la carpeta del proyecto
+
+2. Inicializar Git:
+   git init
+
+3. Agregar todos los archivos:
+   git add .
+
+4. Hacer commit:
+   git commit -m "Initial commit: GASOX, FERSXMET y DrHome apps"
+
+5. Conectar con GitHub:
+   git remote add origin https://github.com/zZzWichoL1/Apps.git
+
+6. Subir a GitHub:
+   git branch -M main
+   git push -u origin main
+
+═══════════════════════════════════════════════════════════════
+
+OPCIÓN 2: ACTUALIZAR REPOSITORIO EXISTENTE
+═════════════════════════════════════════════════════════════
+
+1. Abre Git Bash o Terminal en la carpeta del proyecto
+
+2. Verificar estado:
+   git status
+
+3. Agregar cambios:
+   git add .
+
+4. Hacer commit:
+   git commit -m "Update: Mejoras en DrHome y documentación"
+
+5. Subir cambios:
+   git push origin main
+
+═══════════════════════════════════════════════════════════════
+
+COMANDOS ÚTILES
+═══════════════════════════════════════════════════════════
+
+Ver estado:
+   git status
+
+Ver historial:
+   git log --oneline
+
+Ver archivos ignorados:
+   git status --ignored
+
+Deshacer último commit (mantener cambios):
+   git reset --soft HEAD~1
+
+Actualizar desde GitHub:
+   git pull origin main
+
+═══════════════════════════════════════════════════════════════
+
+ANTES DE SUBIR
+═══════════════════════════════════════════════════════════
+
+✅ Verifica que .gitignore esté en la raíz
+✅ Asegúrate de no subir archivos grandes innecesarios
+✅ Revisa que no haya información sensible (contraseñas, tokens)
+✅ Comprueba que el README_GITHUB.md esté completo
+
+═══════════════════════════════════════════════════════════════
+
+ESTRUCTURA QUE SE SUBIRÁ
+═══════════════════════════════════════════════════════════
+
+Apps/
+├── .gitignore                      ✅ Ignorar archivos innecesarios
+├── README.md                       ✅ Documentación principal
+├── README_GITHUB.md                ✅ README para GitHub
+├── GUIA_RAPIDA.md                  ✅ Guía de inicio
+├── DOCUMENTACION_TECNICA.md        ✅ Detalles técnicos
+│
+├── gasox/
+│   ├── gasox.ino                   ✅ ESP32
+│   └── [archivos Flutter]          ✅ App
+│
+├── fersxmet/
+│   └── [archivos Flutter]          ✅ App
+│
+├── drhome_app/drhome/
+│   ├── drhome_esp32_FINAL/         ✅ ESP32
+│   ├── lib/                        ✅ App Flutter
+│   ├── README.md                   ✅ Doc
+│   └── NOTA_BROWNOUT.txt           ✅ Ayuda
+│
+└── unified_esp32.ino               ✅ ESP32 unificado
+
+═══════════════════════════════════════════════════════════════
+
+OPCIONAL: CREAR CARPETA DE SCREENSHOTS
+═══════════════════════════════════════════════════════════
+
+1. Crea carpeta:
+   mkdir screenshots
+
+2. Agrega capturas de pantalla:
+   screenshots/
+   ├── gasox_1.png
+   ├── gasox_2.png
+   ├── gasox_3.png
+   ├── fersxmet_1.png
+   ├── fersxmet_2.png
+   ├── fersxmet_3.png
+   ├── drhome_1.png
+   ├── drhome_2.png
+   └── drhome_3.png
+
+3. Actualiza README_GITHUB.md con las rutas correctas
+
+═══════════════════════════════════════════════════════════════
+
+DESPUÉS DE SUBIR
+═══════════════════════════════════════════════════════════
+
+1. Ve a: https://github.com/zZzWichoL1/Apps
+
+2. Verifica que todo se haya subido correctamente
+
+3. Opcional: Renombra README_GITHUB.md a README.md en GitHub
+   (o copia su contenido al README.md principal)
+
+4. Agrega topics en GitHub:
+   - flutter
+   - esp32
+   - iot
+   - arduino
+   - mobile-app
+   - healthcare
+   - weather-station
+   - gas-detector
+
+5. Agrega descripción del repositorio:
+   "Colección de 3 apps IoT profesionales con ESP32 y Flutter"
+
+═══════════════════════════════════════════════════════════════
+
+COMANDOS COMPLETOS (COPIA Y PEGA)
+═══════════════════════════════════════════════════════════
+
+# Primera vez
+git init
+git add .
+git commit -m "Initial commit: GASOX, FERSXMET y DrHome apps"
+git remote add origin https://github.com/zZzWichoL1/Apps.git
+git branch -M main
+git push -u origin main
+
+# Actualizaciones posteriores
+git add .
+git commit -m "Update: [descripción de cambios]"
+git push origin main
+
+═══════════════════════════════════════════════════════════════
+
+¡Listo! Tu proyecto estará en GitHub 🎉
